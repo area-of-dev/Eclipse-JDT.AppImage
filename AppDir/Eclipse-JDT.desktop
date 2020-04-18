@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Eclipse-JDT
+Comment=Eclipse IDE for Java Developers
+Exec=AppRun %U
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=icon
+Categories=Development;
+StartupWMClass=Ecilpse-JDT
+StartupNotify=true
