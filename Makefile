@@ -14,7 +14,7 @@ all:
 	mv eclipse/* AppDir/opt/application
 
 	chmod +x AppDir/AppRun
-	export ARCH=x86_64; appimagetool AppDir $(OUTPUT)
+	export ARCH=x86_64; appimagetool.AppImage AppDir $(OUTPUT)
 
 	chmod +x $(OUTPUT)
 
