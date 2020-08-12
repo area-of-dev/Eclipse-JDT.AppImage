@@ -35,10 +35,9 @@ all:
 	cp --recursive --force usr/java/jdk-12.0.2/* AppDir/jre
 
 	chmod +x AppDir/AppRun
-	export ARCH=x86_64; bin/appimagetool.AppImage AppDir $(OUTPUT)
-
+	export ARCH=x86_64 && bin/appimagetool.AppImage AppDir $(OUTPUT)
 	chmod +x $(OUTPUT)
 
 	rm -rf ./eclipse ./usr
-	rm -rf ./AppDir/application
+	rm -rf ./AppDir/application ./AppDir/jre
 	rm -f $(DESTINATION)
